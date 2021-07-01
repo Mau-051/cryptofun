@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crypto Fun</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: content-box;
+    }
+
+    *::selection {
+   background: #cdacd2;
+   color: #241a3e;
+}
+
+    .crypto-card {
+      margin: 1rem;
+      display: flex;
+      width: 40rem;
+      border-radius: 5px;
+      padding: 1rem;
+      background-color: #564879;
+    }
+
+    .crypto-card__details {
+      width: 50%;
+    }
+
+    .crypto-card__details h2 {
+      margin-bottom: 1rem;
+      color: #ffd900de;
+    }
+
+    .crypto-detail {
+      display: flex;
+      margin-bottom: 0.5rem;
+    }
+
+    .crypto-detail__key {
+      font-weight: bold;
+      width: 17ch;
+    }
+
+    .crypto-card__image {
+      width: 50%;
+    }
+
+    .crypto-price {
+      color: #ffd900de;
+    }
+
+    .crypto-card__image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.5rem;
+    }
+
+    p {
+      padding: 0.1rem;
+      color: #cdacd2;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #241a3e;
+    }
+
+    .navbar {
+     margin-left:  1rem;
+     margin-right: 1rem;
+     background-color: #16032b;
+     overflow: auto;
+     border-radius: 0.5rem;
+    }
+
+    .navbar a {
+      float: left;
+      padding: .1rem;
+      color: #564879;
+      font-size: 2.2rem;
+    }
+
+    .navbar a:hover {
+     background-color: #e9e9e9;
+     color:#16032b;
+    }
+
+  @media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+   }
+  }
+
+  </style>
+  <body>
+    <main>
+      <div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i></a> 
+</div>
+      <!-- Name, Current Value, Description, Year of Creation,  Market Cap -->
+      <div class="crypto-card">
+        <div class="crypto-card__details">
+          <h2>Bitcoin</h2>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Current Value in US dollars:</p>
+            <p class="crypto-detail__value"><div class="crypto-price">$33,749</div></p>
+          </div>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Description:</p>
+            <p class="crypto-detail__value">
+              is the best known cryptocurrency and threfore the most valueable
+              one or maybe is the other way around but anyway it's the crybto by
+              exelence,
+            </p>
+          </div>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Year of creation:</p>
+            <p class="crypto-detail__value">2009</p>
+          </div>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Market Cap</p>
+            <p class="crypto-detail__value">611,381,810,017</p>
+          </div>
+        </div>
+        <div class="crypto-card__image">
+          <img alt="Bitcoins"
+          src="https://images.unsplash.com/photo-1609726494499-27d3e942456c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+          />
+        </div>
+      </div>
+      <div class="crypto-card">
+        <div class="crypto-card__details">
+          <h2>Dogecoin</h2>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Current Value in US dollars:</p>
+            <p class="crypto-detail__value"><div class="crypto-price">$0.22</div></p>
+          </div>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Description:</p>
+            <p class="crypto-detail__value">
+              it was made as an internet joke and that is why the coin's maskot
+              is the well known dog "doge" from which the cryptocurrency gets
+              it's name
+            </p>
+          </div>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Year of creation:</p>
+            <p class="crypto-detail__value">2013</p>
+          </div>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Market Cap</p>
+            <p class="crypto-detail__value">29,258,418,008</p>
+          </div>
+        </div>
+        <div class="crypto-card__image">
+          <img alt="Bitcoins"
+          src="https://images.unsplash.com/photo-1609726494499-27d3e942456c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+          />
+        </div>
+      </div>
+      <div class="crypto-card">
+        <div class="crypto-card__details">
+          <h2>Litecoin</h2>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Current Value in US dollars:</p>
+            <p class="crypto-detail__value"><div class="crypto-price">$128.40</div></p>
+          </div>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Description:</p>
+            <p class="crypto-detail__value">
+              Litecoin was an early bitcoin spinoff or altcoin, In technical
+              details, Litecoin is nearly identical to Bitcoin but is less
+              valueable as of now.
+            </p>
+          </div>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Year of creation:</p>
+            <p class="crypto-detail__value">2011</p>
+          </div>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Market Cap</p>
+            <p class="crypto-detail__value">8,587,654,478</p>
+          </div>
+        </div>
+        <div class="crypto-card__image">
+          <img alt="Bitcoins"
+          src="https://images.unsplash.com/photo-1609726494499-27d3e942456c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+          />
+        </div>
+      </div>
+      <div class="crypto-card">
+        <div class="crypto-card__details">
+          <h2>Ethereum</h2>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Current Value in US dollars:</p>
+            <p class="crypto-detail__value"><div class="crypto-price">$1,914.27</div></p>
+          </div>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Description:</p>
+            <p class="crypto-detail__value">
+              Ethereum is a decentralized, open-source blockchain with smart
+              contract functionality. Ether is the native cryptocurrency of the
+              platform.
+            </p>
+          </div>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Year of creation:</p>
+            <p class="crypto-detail__value">2015</p>
+          </div>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Market Cap</p>
+            <p class="crypto-detail__value">222,996,311,105</p>
+          </div>
+        </div>
+        <div class="crypto-card__image">
+          <img alt="Bitcoins"
+          src="https://images.unsplash.com/photo-1609726494499-27d3e942456c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+          />
+        </div>
+      </div>
+      <div class="crypto-card">
+        <div class="crypto-card__details">
+          <h2>NEO</h2>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Current Value in US dollars:</p>
+            <p class="crypto-detail__value"><div class="crypto-price">$33.52</div></p>
+          </div>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Description:</p>
+            <p class="crypto-detail__value">
+              NEO is a smart contract platform, similar to Ethereum, that was
+              created by a team of developers in China and was formerly known as
+              Antshares.
+            </p>
+          </div>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Year of creation:</p>
+            <p class="crypto-detail__value">2014</p>
+          </div>
+          <div class="crypto-detail">
+            <p class="crypto-detail__key">Market Cap</p>
+            <p class="crypto-detail__value">2,330,191,580</p>
+          </div>
+        </div>
+        <div class="crypto-card__image">
+          <img alt="Bitcoins"
+          src="https://images.unsplash.com/photo-1609726494499-27d3e942456c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
